@@ -1,14 +1,14 @@
 import XCTest
 
 class DataElementFormatterTests: XCTestCase {
-    let date = buildDate(year: 1986, month: 9, day: 14)!
+    let date = buildDate(year: 1987, month: 10, day: 11)!
     
     func testFormatString() {
         XCTAssertEqual(DataElementFormatter.formatString("KYLEDECOT", length: 5), "KYLED")
     }
     
     func testFormatPostalCode() {
-        XCTAssertEqual(DataElementFormatter.formatPostalCode(postalCode: "43212"), "432120000")
+        XCTAssertEqual(DataElementFormatter.formatPostalCode(postalCode: "59132"), "432120000")
     }
     
     func testFormatDate() {
